@@ -6,6 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: 'https://kong0422.github.io/1151VIS-HW2-415085097-HuangHungLin',
   plugins: [
     vue(),
     vueDevTools(),

@@ -240,7 +240,7 @@ export default {
     try{ this.apiKey=localStorage.getItem("cwa_key")||this.API_KEY; }catch(e){}
     this.loadLive(); 
     const auto=()=>!EMBEDDED&&!!this.apiKey;
-    this.timer=setInterval(()=>{ if(auto()) this.loadLive(); }, this.refreshMs);
+    this.timer=setInterval(()=>{ if(auto()) this.loadLive(); alert('loadLive'); }, this.refreshMs);
   },
   // 需要 DOM（svg / 圖例）的動作要等掛載後才能做
   mounted(){ this.drawLegend(); this.drawBars(); this.loadMap(); },
