@@ -4,7 +4,7 @@
 
 資料分析與視覺化應用 HW2 - 415085097 黃宏霖  
 GitHub 專案：[https://github.com/kong0422/1151VIS-HW2-415085097-HuangHungLin](https://github.com/kong0422/1151VIS-HW2-415085097-HuangHungLin)  
-Youtube：
+Youtube：還沒做  
 線上展示：[https://kong0422.github.io/1151VIS-HW2-415085097-HuangHungLin/](https://kong0422.github.io/1151VIS-HW2-415085097-HuangHungLin/)
 
 > 以 **Vue 3.5 + D3.js + TopoJSON** 製作的台灣縣市氣象地圖。每個縣市依「轄內測站的平均值」直接填上顏色。
