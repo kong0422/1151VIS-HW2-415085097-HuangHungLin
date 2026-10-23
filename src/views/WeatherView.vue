@@ -91,7 +91,6 @@ import Papa from 'papaparse';
 
 <script>
 
-const EMBEDDED = null;
 // 測試用預設授權碼（瀏覽器若已存過其他授權碼，以瀏覽器內的為準；分享檔案前請先清空）
 const URLS = [
   "https://cdn.jsdelivr.net/npm/taiwan-atlas/counties-10t.json",
@@ -239,8 +238,8 @@ export default {
     this.zoomT=d3.zoomIdentity; this.centroids=[]; this.brush=null; this.brushG=null; this.drag=null;
     try{ this.apiKey=localStorage.getItem("cwa_key")||this.API_KEY; }catch(e){}
     this.loadLive(); 
-    const auto=()=>!EMBEDDED&&!!this.apiKey;
-    this.timer=setInterval(()=>{ if(auto()) this.loadLive(); alert('loadLive'); }, this.refreshMs);
+    // this.timer=setInterval(()=>{ if(auto()) this.loadLive(); ; }, this.refreshMs);
+    this.timer=setInterval(()=>{ this.loadLive(); }, this.refreshMs);
   },
   // 需要 DOM（svg / 圖例）的動作要等掛載後才能做
   mounted(){ this.drawLegend(); this.drawBars(); this.loadMap(); },
