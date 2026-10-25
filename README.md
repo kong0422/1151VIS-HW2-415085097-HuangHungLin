@@ -153,6 +153,3 @@ Youtube：[https://youtu.be/AqWZC52pzoU](https://youtu.be/AqWZC52pzoU)
 | `O-A0003-001` 現在天氣觀測報告（每 10 分鐘更新） | 氣溫、累積雨量、日照時數、天氣現象、測站對照 | `AirTemperature`、`Now.Precipitation`、`SunshineDuration`、`Weather`、`StationId`、`StationName`、`GeoInfo.CountyName`、`ObsTime.DateTime`；`UVIndex`（即時讀數，作為紫外線的備援） |
 | `O-A0005-001` 紫外線指數－每日最大值 | 紫外線（主要來源） | `weatherElement.location[].StationID`、`UVIndex`；`weatherElement.Date` |
 | `F-C0032-001` 36 小時天氣預報 | 降雨機率、天氣現象（補觀測缺漏的縣市） | `PoP`（降雨機率）、`Wx`（天氣現象），取最近一個時段 |
-
-氣象資料來自中央氣象署開放資料平台，依「政府資料開放授權條款－第1版」提供，使用時請遵守該授權條款與氣象署的使用規範。縣市邊界資料來自 `taiwan-atlas` 套件，請依其授權使用。
-
